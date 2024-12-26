@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 grid-rows-6  gap-2 text-black">
+        <div class="bg-sky-500 p-3  rounded-lg">1 look the padding effects everything</div>
+        <div class="bg-sky-500 rounded-lg flex justify-center ">2</div>
+        <div class="bg-red-600 rounded-lg col-span-2 row-span-2 flex justify-center ">3</div>
+        <div class="bg-sky-500 rounded-lg flex justify-center ">4</div>
+        <div class="bg-sky-500 rounded-lg flex justify-center ">5</div>
+    </div>
+    <div class="m-[40px]"></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 grid-rows-7   gap-2 text-black">
+        <div class="bg-sky-500 p-3 col-start-2 col-end-3  rounded-lg">1 look the padding effects everything</div>
+        <div class="bg-sky-500 rounded-lg row-start-1 row-end-5 flex justify-center ">2</div>
+        <div class="bg-red-600 rounded-lg  flex justify-center ">3</div>
+        <div class="bg-sky-500 rounded-lg flex justify-center ">4</div>
+        <div class="bg-sky-500 rounded-lg flex justify-center ">5</div>
+    </div>
+
+    <h1 class="text-white p-4">not sure how this works auto-col-max will give each element based on the size</h1>
+    <div class="grid auto-cols-max ">
+        <div class="bg-red-500 text-white">Lorem ipsum dolor sit amet.</div>
+        <div class="bg-red-900 text-white">Lorem, ipsum dolor.</div>
+    </div>
+
+    <h1 class="m-4">
+        Grid rows grid flow col makes the difference
+    </h1>
+
+    <div class="grid grid-rows-3 grid-flow-col gap-2">
+        <div class="bg-red-900">01</div>
+        <div class="bg-red-950 text-white">02</div>
+        <div class="bg-red-950 text-white row-span-2">03</div>
+        <div class="bg-red-950 text-white">04</div>
+        <div class="bg-red-950 text-white">05</div>
+        <div class="bg-red-950 text-white">06</div>
+        <div class="bg-red-950 text-white">07</div>
+        <div class="bg-red-950 text-white">08</div>
+    </div>
+    <h1 class="text-white p-4">Now see the magic of grid-flow-col/row-dense no space</h1>
+    <div class="grid grid-rows-3  grid-flow-col-dense gap-2">
+        <div class="bg-red-900">01</div>
+        <div class="bg-red-950 text-white">02</div>
+        <div class="bg-red-950 text-white row-span-2">03</div>
+        <div class="bg-red-950 text-white">04</div>
+        <div class="bg-red-950 text-white">05</div>
+        <div class="bg-red-950 text-white">06</div>
+        <div class="bg-red-950 text-white">07</div>
+        <div class="bg-red-950 text-white">08</div>
+    </div>
+</body>
+</html>

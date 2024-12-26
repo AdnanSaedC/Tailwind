@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        input[type="text"]{
+            appearance: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Translate</h1>
+    <button class="bg-slate-300 p-3 hover:translate-x-3 hover:translate-y-3">Iam Moving</button>
+    <button class="bg-slate-300 p-3 hover:translate-x-3 hover:translate-y-3 transition">Iam Moving a lot smoother</button>
+</div>
+<div>
+    <h1>Now delay and duration</h1>
+    <button class="bg-slate-300 p-3 duration-1000 ease-in-out hover:animate-pulse   delay-300 hover:translate-x-3 hover:translate-y-3 transition">Iam Moving a lot smoother</button>
+</div>
+<p>Go and study there are tons of animation</p>
+<div>
+    <h1>Now scale and rotate and skew</h1>
+    <button class="bg-slate-300 p-3 duration-1000 ease-in-out hover:scale-150 hover:rotate-90 hover:skew-y-12  delay-300 hover:translate-x-3 hover:translate-y-3 transition">Iam Moving a lot smoother</button>
+</div>
+<button>normal</button>
+<button disabled class="hover:disabled:opacity-50 placeholder:italic">disabled</button>
+<input placeholder="its in italic" class="placeholder:italic">
+</body>
+</html>
